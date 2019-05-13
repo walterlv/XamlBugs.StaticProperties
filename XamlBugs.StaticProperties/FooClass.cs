@@ -7,6 +7,9 @@ namespace XamlBugs.StaticProperties
     /// </summary>
     public static class FooClass
     {
+        /// <summary>
+        /// The correct value for this property is `string.Empty`, but you'll see `1` in actual.
+        /// </summary>
         public static string Border => "";
     }
 }
